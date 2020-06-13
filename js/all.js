@@ -1,20 +1,33 @@
-var galleryThumbs = new Swiper(".gallery-thumbs", {
-  direction: "vertical",
-  spaceBetween: 10,
-  slidesPerView: 3,
-  loop: false,
-  freeMode: true,
-  loopedSlides: 3, //looped slides should be the same
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
 var galleryTop = new Swiper(".gallery-top", {
   direction: "vertical",
-
   spaceBetween: 10,
   loop: true,
   loopedSlides: 3, //looped slides should be the same
-  thumbs: {
-    swiper: galleryThumbs,
-  },
 });
+
+$(function(){
+    lineTypeAInit();
+    bindThumbnailEvent();
+})
+
+function lineTypeAInit(){
+  let lineTypeA = $('.typeA');
+  if(lineTypeA.length){
+     $('.typeA').addClass('init');
+  }
+}
+
+function bindThumbnailEvent(){
+  let galleryThumbsItem = $('.gallery-thumbs li');
+  if(galleryThumbsItem.length){
+    galleryThumbsItem.each(function(){
+        let _this = $(this);
+        let itemIndex = _this.index();
+        _this.click(function(){
+          galleryTop.slideTo(itemIndex);
+        })
+    })
+  }
+}
+
+

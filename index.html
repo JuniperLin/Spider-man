@@ -31,30 +31,12 @@
   </head>
   <body>
     <div class="warp">
-      <div class="water-mark">Advanced<br />suit</div>
-      <div class="lines">
-        <div class="line1">
-          <div class="horizontal-left-line"></div>
-          <div class="vertical-left-line"></div>
-        </div>
-        <div class="line2">
-          <div class="vertical-mid-line"></div>
-          <div class="horizontal-mid-line"></div>
-        </div>
-        <div class="line3">
-          <div class="horizontal-right-line"></div>
-        </div>
-        <div class="line4">
-          <div class="vertical-left-line"></div>
-        </div>
-        <div class="line5">
-          <div class="vertical-mid-line"></div>
-        </div>
-        <div class="line6"></div>
-      </div>
-      <header>
-        <nav>
-          <a href="/" class="logo"><h1>Spider-man</h1></a>
+      <div class="water-mark">
+        <div class="text-wrapper">
+          <div class="line"></div>
+          <div class="text">
+            suit
+          </div> 
           <div class="spider-logo">
             <img
               src="img/night-img/icon-night.png"
@@ -62,6 +44,31 @@
               class="icon icon-night"
             />
           </div>
+          <div class="text">
+            Advanced
+          </div>
+        </div>       
+      </div>
+      <div class="lines-layout typeA">
+          <div class="line-top"></div>
+          <div class="line-bot"></div>
+          <div class="line-left"></div>
+          <ul class="gallery-thumbs">
+            <li class=" thumb1">
+              <img src="./img/slider-img1.svg" alt="">
+            </li>
+            <li  class=" thumb2">
+              <img src="./img/slider-img2.svg" alt="">
+            </li>
+            <li  class=" thumb3">
+              <img src="./img/slider-img3.svg" alt="">
+            </li>
+          </ul>
+      </div>
+      <header class="header">
+        <nav class="nav">
+          <a href="/" class="logo"><h1>Spider-man</h1></a>
+          
           <ul class="nav-menu">
             <li>
               <a href="#">Search_</a>
@@ -87,13 +94,6 @@
         </nav>
       </header>
       <section class="main-area">
-        <div class="swiper-container gallery-thumbs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide1"></div>
-              <div class="swiper-slide slide2"></div>
-              <div class="swiper-slide slide3"></div>
-            </div>
-        </div>
         <!-- Swiper -->
         <div class="swiper">
           <div class="swiper-container gallery-top">
@@ -101,18 +101,20 @@
               <div class="swiper-slide">
                 <img src="img/spidy1.png" alt="" width="100%" />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide center">
                 <img src="img/spidy2.png" alt="" width="100%" />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide center">
                 <img src="img/spidy3.png" alt="" width="100%" />
               </div>
             </div>
           </div>
       </section>
     </div>
+    <script src="./js/jquery.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/all.js"></script>
   </body>
+  
 </html>
