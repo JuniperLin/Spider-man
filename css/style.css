@@ -402,7 +402,7 @@ body.lightMode-active .lines-layout [class*="line-"]::after {
 
 /* Lines Layout TypeC Ends */
 
-.water-mark {
+.watermark {
   user-select: none;
   width: 100%;
   height: 100%;
@@ -411,7 +411,7 @@ body.lightMode-active .lines-layout [class*="line-"]::after {
   text-align: center;
 }
 
-.water-mark .text-wrapper {
+.watermark .text-wrapper {
   text-transform: uppercase;
   font-family: "Chakra Petch", sans-serif;
   color: #ffffff;
@@ -425,11 +425,11 @@ body.lightMode-active .lines-layout [class*="line-"]::after {
   transition: 0.3s;
 }
 
-body.lightMode-active .water-mark .text-wrapper {
+body.lightMode-active .watermark .text-wrapper {
   color: #1f1f1f;
 }
 
-.water-mark .text-wrapper .line-mid {
+.watermark .text-wrapper .line-mid {
   top: 50%;
   left: 0;
   right: 0;
@@ -441,16 +441,16 @@ body.lightMode-active .water-mark .text-wrapper {
   position: absolute;
   transition: 1s;
 }
-body.lightMode-active .water-mark .text-wrapper .line-mid {
+body.lightMode-active .watermark .text-wrapper .line-mid {
   background-color: #1f1f1f4f;
 }
 
-.water-mark .text-wrapper.init .line-mid {
+.watermark .text-wrapper.init .line-mid {
   width: calc(100% - 140px);
 }
 
-.water-mark .text-wrapper .line-mid::after,
-.water-mark .text-wrapper .line-mid::before {
+.watermark .text-wrapper .line-mid::after,
+.watermark .text-wrapper .line-mid::before {
   content: "";
   width: 20px;
   height: 100%;
@@ -459,30 +459,30 @@ body.lightMode-active .water-mark .text-wrapper .line-mid {
   transition: 0.3s;
 }
 
-body.lightMode-active .water-mark .text-wrapper .line-mid::after,
-body.lightMode-active .water-mark .text-wrapper .line-mid::before {
+body.lightMode-active .watermark .text-wrapper .line-mid::after,
+body.lightMode-active .watermark .text-wrapper .line-mid::before {
   background-color: #1f1f1f;
 }
 
-.water-mark .text-wrapper .line-mid::before {
+.watermark .text-wrapper .line-mid::before {
   right: 0;
 }
 
-.water-mark .spider-logo {
+.watermark .spider-logo {
   width: 69px;
   align-self: flex-start;
   transform: translateY(20%);
 }
 
-.water-mark .spider-logo .icon {
+.watermark .spider-logo .icon {
   width: 100%;
 }
 
-.water-mark .spider-logo .icon.icon-light {
+.watermark .spider-logo .icon.icon-light {
   display: none;
 }
 
-.water-mark .text {
+.watermark .text {
   writing-mode: vertical-rl;
   font-size: 250px;
   font-weight: bold;
