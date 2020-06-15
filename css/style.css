@@ -19,6 +19,7 @@ body {
 a,
 p {
   color: white;
+  transition: 0.3s ease-in-out;
 }
 
 body.lightMode-active a,
@@ -67,7 +68,6 @@ body.lightMode-active .warp {
   font-size: 20px;
   letter-spacing: 0.13em;
   font-weight: normal;
-  transition: color 0.3s;
 }
 
 .nav .icon {
@@ -95,7 +95,6 @@ body.lightMode-active .warp {
 .nav-menu a {
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: 0.02em;
-  transition: color 0.3s;
 }
 
 .nav-menu a:hover {
@@ -117,7 +116,6 @@ body.lightMode-active .nav-menu a:hover {
 
 body.lightMode-active .nav-btn:hover p {
   color: white;
-  transition: 0.3s;
 }
 
 .nav-menu .nav-btn:hover path {
@@ -379,7 +377,7 @@ body.lightMode-active .lines-layout [class*="line-"]::after {
   outline: none;
   position: relative;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .pre-order-btn:hover {
   transform: scale(1.1);
@@ -422,11 +420,6 @@ body.lightMode-active .lines-layout [class*="line-"]::after {
   align-items: flex-end;
   position: relative;
   height: 100%;
-  transition: 0.3s;
-}
-
-body.lightMode-active .watermark .text-wrapper {
-  color: #1f1f1f;
 }
 
 .watermark .text-wrapper .line-mid {
@@ -624,5 +617,5 @@ body.lightMode-active .night {
 }
 
 body.lightMode-active .light {
-  display: block;
+  display: initial;
 }
