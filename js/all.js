@@ -5,6 +5,7 @@ var galleryTop = new Swiper(".gallery-top", {
   loopedSlides: 3, //looped slides should be the same
   autoplay: {
     delay: 3000,
+    disableOnInteraction: false,
   },
 });
 
