@@ -4,6 +4,9 @@ var galleryTop = new Swiper(".gallery-top", {
   loop: true,
   speen: 1000,
   effect: "flip",
+  flipEffect: {
+    slideShadows: false,
+  },
   loopedSlides: 3, //looped slides should be the same
   autoplay: {
     delay: 3000,
