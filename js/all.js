@@ -2,10 +2,15 @@ var galleryTop = new Swiper(".gallery-top", {
   direction: "vertical",
   spaceBetween: 10,
   loop: true,
+  speen: 1000,
+  effect: "flip",
   loopedSlides: 3, //looped slides should be the same
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+  },
+  keyboard: {
+    enabled: true,
   },
 });
 
