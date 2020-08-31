@@ -23,7 +23,6 @@ $(function () {
   lineTypeCInit();
   bindThumbnailEvent();
   swiperImageInit();
-  modeToggler();
 });
 
 function lineTypeAInit() {
